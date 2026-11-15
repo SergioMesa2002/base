@@ -1,0 +1,28 @@
+{
+  "objetivo": "REGISTROS_TOTAL",
+  "escenario_seleccionado": "CEROS_COMO_FALTANTES",
+  "modelo_seleccionado": "promedio_3_meses",
+  "variables": [
+    "MUNICIPIO",
+    "MES_SIN",
+    "MES_COS",
+    "TENDENCIA_TIEMPO",
+    "DIAS_FESTIVOS",
+    "FESTIVOS_EN_LUNES",
+    "LAG_1",
+    "LAG_2",
+    "LAG_3",
+    "PROMEDIO_3",
+    "PROMEDIO_6",
+    "LAG_12"
+  ],
+  "periodo_validacion": "2024-01 a 2025-12",
+  "periodo_prueba": "2026-01 a 2026-08",
+  "intervalo": "cuantil 90% del error absoluto en validación",
+  "margen_por_municipio": {
+    "DUITAMA": 10.966666666666665,
+    "SOGAMOSO": 8.999999999999998,
+    "TUNJA": 15.466666666666667,
+    "GLOBAL": 12.466666666666665
+  }
+}

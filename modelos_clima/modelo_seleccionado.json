@@ -1,0 +1,33 @@
+{
+  "objetivo": "REGISTROS_TOTAL",
+  "escenario_seleccionado": "CEROS_COMO_FALTANTES",
+  "modelo_seleccionado": "random_forest",
+  "variables": [
+    "MUNICIPIO",
+    "MES_SIN",
+    "MES_COS",
+    "TENDENCIA_TIEMPO",
+    "DIAS_FESTIVOS",
+    "FESTIVOS_EN_LUNES",
+    "LAG_1",
+    "LAG_2",
+    "LAG_3",
+    "PROMEDIO_3",
+    "PROMEDIO_6",
+    "LAG_12",
+    "PRECIPITACION_MM",
+    "DIAS_CON_LLUVIA",
+    "PRECIPITACION_MAX_DIA"
+  ],
+  "usa_clima": true,
+  "supuesto_clima_futuro": "mediana histórica del municipio para el mismo mes",
+  "periodo_validacion": "2024-01 a 2025-12",
+  "periodo_prueba": "2026-01 a 2026-08",
+  "intervalo": "cuantil 90% del error absoluto en validación",
+  "margen_por_municipio": {
+    "DUITAMA": 11.142663420298577,
+    "SOGAMOSO": 10.098360640748146,
+    "TUNJA": 17.125837814049977,
+    "GLOBAL": 12.124240293186347
+  }
+}
